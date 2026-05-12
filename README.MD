@@ -97,19 +97,19 @@ npm test
 
 ### Chat con Astra
 
-![Astra](./screenshots/AstraChat.png)
+![Astra](public/AstraChat.png)
 
 ### Chat con Gojo
 
-![Gojo](./screenshots/ChatGojo.png)
+![Gojo](public/ChatGojo.png)
 
 ### About
 
-![About](./screenshots/About.png)
+![About](public/About.png)
 
 ### Tests
 
-![Tests](./screenshots/Test.png)
+![Tests](public/Test.png)
 
 ## Autor
 
