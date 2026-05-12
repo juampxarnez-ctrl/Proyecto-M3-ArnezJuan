@@ -89,6 +89,37 @@ npm test
 - Integración segura con Gemini mediante Vercel Functions.
 - Tests con Vitest.
 
+## Estructura del proyecto
+
+```txt
+chat-ia-project
+├── api
+│   ├── chat.js
+│   └── test.js
+│── Docs             # Documentación del uso de IA y capturas
+│   └── ...
+├── public
+│   └── ...
+├── src
+│   ├── views
+│   │   ├── about.js
+│   │   ├── chat.js
+│   │   └── home.js
+│   ├── api.js
+│   ├── characters.js
+│   ├── chat.js
+│   ├── main.js
+│   ├── router.js
+│   └── styles.css
+├── test
+│   └── api.test.js
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
 ## Capturas
 
 ### Home
