@@ -4,7 +4,7 @@ NovaChat es una Single Page Application responsive donde los usuarios pueden ele
 
 ## Link del proyecto
 
-- Aplicación desplegada: PEGAR_LINK_DE_VERCEL
+- Aplicación desplegada: proyecto-m3-ia-chat.vercel.app
 - Repositorio: https://github.com/juampxarnez-ctrl/Proyecto-M3-ArnezJuan.git
 
 ## Personajes
