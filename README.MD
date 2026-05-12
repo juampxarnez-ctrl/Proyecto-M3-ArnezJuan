@@ -93,7 +93,7 @@ npm test
 
 ### Home
 
-![Home](./public/Home.png)
+![Home](public/Home.png)
 
 ### Chat con Astra
 
