@@ -41,7 +41,7 @@ Crear un archivo `.env.local` en la raíz del proyecto:
 GEMINI_API_KEY=tu_api_key
 ```
 
-También se puede crear un `.env.example` con:
+También se puede crear un `.env` con:
 
 ```env
 GEMINI_API_KEY=
@@ -93,7 +93,7 @@ npm test
 
 ### Home
 
-![Home](./screenshots/Home.png)
+![Home](./public/Home.png)
 
 ### Chat con Astra
 
