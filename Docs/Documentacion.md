@@ -27,11 +27,6 @@ Output:
 
 ![output](../public/output500ERROR.png)
 
-![output](../public/output2.png)
-
-
-
-
 ## 2. Manejo de errores de Gemini AI
 
 Durante el desarrollo se detectaron errores relacionados con la API de Gemini, especialmente:
