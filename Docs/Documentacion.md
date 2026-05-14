@@ -17,13 +17,13 @@ Para resolverlo se revisaron:
 
 El problema principal estaba relacionado con la configuración de Gemini y las variables de entorno. Se creó una ruta de prueba `/api/test` para confirmar que `GEMINI_API_KEY` estuviera cargando correctamente.
 
-input:
+Input:
 
 ![input](../public/inputERROR500.png)
 
 ![input](../public/ERROR-INTERNO.png)
 
-output:
+Output:
 
 ![output](../public/output500ERROR.png)
 
@@ -32,7 +32,7 @@ output:
 
 
 
-## 2 Manejo de errores de Gemini AI
+## 2. Manejo de errores de Gemini AI
 
 Durante el desarrollo se detectaron errores relacionados con la API de Gemini, especialmente:
 
@@ -46,12 +46,14 @@ Estos errores ocurrían cuando:
 
 Inicialmente el chat mostraba un error genérico al usuario.
 
-input:
+Input:
 ![input](../public/inputgeminicuota.png)
 ![input](../public/inputgeminicuota2.png)
 
 Para mejorar la experiencia se implementó un sistema de respuestas fallback personalizadas por personaje.
-output
+
+Output:
+
 ![output](../public/outputMENSAJE.png)
 
 ![output](../public/OUTPUTGOJO.png)
@@ -77,14 +79,14 @@ Durante la implementación de los tests apareció el error:
 ReferenceError: localStorage is not defined
 ```
 
-input:
+Input:
 
 ![input](../public/inputlocalstorege.png)
 
 
-Solucion que se implemento fue crear mock manual de "localStorage"
+Solucion implementada fue crear mock manual de "localStorage"
 
-output:
+Output:
 
 ```js
 
