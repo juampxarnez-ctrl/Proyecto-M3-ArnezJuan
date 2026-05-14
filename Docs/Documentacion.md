@@ -69,3 +69,44 @@ fallbackReply:
 ```
 En conclusión, se logró mejorar la experiencia del usuario evitando que la interfaz se rompa ante errores de la API. El usuario continúa recibiendo feedback visual y el personaje seleccionado mantiene su personalidad mediante respuestas fallback personalizadas.
 
+## 3 Error con localStorage en Vitest
+
+Durante la implementación de los tests apareció el error:
+
+```txt
+ReferenceError: localStorage is not defined
+```
+
+input:
+
+![input](../public/inputlocalstorege.png)
+
+
+Solucion que se implemento fue crear mock manual de "localStorage"
+
+output:
+
+```js
+
+global.localStorage = {
+  getItem: vi.fn(() => "astra"),
+  setItem: vi.fn(),
+  removeItem: vi.fn(),
+  clear: vi.fn()
+};
+```
+y despues 
+
+```js
+describe("sendMessage", () => {
+  beforeEach(() => {
+    vi.restoreAllMocks();
+    localStorage.setItem("character", "astra");
+  });
+
+```
+se utilizó beforeEach() para reiniciar los mocks antes de cada test y evitar que compartieran estado entre sí.
+
+![output](../public/outputsoluciontest.png)
+
+En conclusión, se logró resolver el problema de `localStorage` creando un mock manual y reiniciando los mocks antes de cada test. Esto permitió ejecutar correctamente las pruebas unitarias, mantener un entorno limpio entre tests y validar el comportamiento del chat y la selección de personajes.
