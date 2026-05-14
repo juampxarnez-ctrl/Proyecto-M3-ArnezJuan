@@ -1,6 +1,6 @@
 # Registro de Desarrollo, Problemas Técnicos y Uso de IA
 
-## Error al enviar mensajes al chat
+## 1 Error al enviar mensajes al chat
 
 Durante el desarrollo apareció el mensaje:
 
@@ -32,6 +32,40 @@ output:
 
 
 
+## 2 Manejo de errores de Gemini AI
 
+Durante el desarrollo se detectaron errores relacionados con la API de Gemini, especialmente:
 
+- `429 Too Many Requests`
+- `503 Service Unavailable`
+
+Estos errores ocurrían cuando:
+- la cuota gratuita era excedida,
+- el modelo estaba saturado,
+- o existían problemas temporales de disponibilidad.
+
+Inicialmente el chat mostraba un error genérico al usuario.
+
+input:
+![input](../public/inputgeminicuota.png)
+![input](../public/inputgeminicuota2.png)
+
+Para mejorar la experiencia se implementó un sistema de respuestas fallback personalizadas por personaje.
+output
+![output](../public/outputMENSAJE.png)
+
+![output](../public/OUTPUTGOJO.png)
+
+```js
+fallbackReply:
+  "Las corrientes del tiempo están saturadas ahora mismo. Intenta de nuevo en unos minutos. ✨"
+```
+
+y para Gojo:
+
+```js
+fallbackReply:
+  "Jaja… parece que hasta el infinito tiene límites hoy. Esperá un poco y volvemos a intentarlo."
+```
+En conclusión, se logró mejorar la experiencia del usuario evitando que la interfaz se rompa ante errores de la API. El usuario continúa recibiendo feedback visual y el personaje seleccionado mantiene su personalidad mediante respuestas fallback personalizadas.
 
