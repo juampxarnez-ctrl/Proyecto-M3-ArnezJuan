@@ -18,12 +18,14 @@ Para resolverlo se revisaron:
 El problema principal estaba relacionado con la configuración de Gemini y las variables de entorno. Se creó una ruta de prueba `/api/test` para confirmar que `GEMINI_API_KEY` estuviera cargando correctamente.
 
 input:
-![input](Docs/inputERROR500.png)
-![input](Docs/ERROR-INTERNO.png)
+![input](../public/inputERROR500.png)
+
+![input](../public/ERROR-INTERNO.png)
 
 output:
-![output](Docs/outputERROR500.png)
-![output](Docs/output2.png)
+![output](../public/outputERROR500.png)
+
+![output](../public/output2.png)
 
 
 
